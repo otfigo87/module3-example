@@ -9,10 +9,10 @@ function Index({fruits}) {
       </nav>
       <h1>Fruits Index Page</h1>
       <ul>
-        {fruits.map((fruit, i) => {
+        {fruits.map((fruit) => {
           return (
-            <li key={i}>
-              The <a href={`/fruits/${i}`}>{fruit.name}</a> is {fruit.color}{" "}
+            <li key={fruit._id}>
+              The <a href={`/fruits/${fruit._id}`}>{fruit.name}</a> is {fruit.color}{" "}
               <br></br>
               {fruit.readyToEat
                 ? `It is ready to eat`
